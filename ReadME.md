@@ -1,44 +1,50 @@
-### Background
+# Credit Risk Classification Challenge
+![image](https://github.com/mehpree/credit-risk-classification/assets/131678606/ecd215d4-9ff0-40f6-84b7-2cce6eb1203d)
 
-In this Challenge, you’ll use various techniques to train and evaluate a model based on loan risk. You’ll use a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.
+## Overview
+In this challenge, I tackled the task of building and evaluating a machine learning model for credit risk assessment. The goal was to use historical lending data from a peer-to-peer lending services company to create a model that can predict the creditworthiness of borrowers.
 
-#### Split the Data into Training and Testing Sets
+## Step 1: Data Preprocessing and Splitting
+### Data Loading
+1. I started by reading the "lending_data.csv" dataset from the Resources folder into a Pandas DataFrame.
 
-Open the starter code notebook and use it to complete the following steps:
+2. To prepare the data for modeling, I created the labels set (`y`) from the "loan_status" column, where 0 indicates a healthy loan, and 1 indicates a high risk of default. 
 
-1.  Read the  `lending_data.csv`  data from the Resources folder into a Pandas DataFrame.
-    
-2.  Create the labels set (`y`) from the “loan_status” column, and then create the features (`X`) DataFrame from the remaining columns.
-    
-    **NOTE**
-    
-    A value of 0 in the “loan_status” column means that the loan is healthy. A value of 1 means that the loan has a high risk of defaulting.
-    
-3.  Split the data into training and testing datasets by using  `train_test_split`.
-    
+3. The remaining columns were used to create the features DataFrame (`X`).
 
-#### Create a Logistic Regression Model with the Original Data
+4. I then split the data into training and testing datasets using the `train_test_split` function.
 
-Use your knowledge of logistic regression to complete the following steps:
+## Step 2: Creating and Evaluating a Logistic Regression Model
+### Logistic Regression Model
+1. I built a logistic regression model using the training data (`X_train` and `y_train`).
 
-1.  Fit a logistic regression model by using the training data (`X_train`  and  `y_train`).
-    
-2.  Save the predictions for the testing data labels by using the testing feature data (`X_test`) and the fitted model.
-    
-3.  Evaluate the model’s performance by doing the following:
-    
-    -   Generate a confusion matrix.
-        
-    -   Print the classification report.
-        
-4.  Answer the following question: How well does the logistic regression model predict both the 0 (healthy loan) and 1 (high-risk loan) labels?
-    
+2. Predictions for the testing data labels were generated using the fitted model and the testing feature data (`X_test`).
 
-#### Write a Credit Risk Analysis Report
+3. To assess the model's performance, I carried out the following:
+   - Generated a confusion matrix.
+   - Printed the classification report.
 
-Write a brief report that includes a summary and analysis of the performance of the machine learning models that you used in this homework. You should write this report as the  `README.md`  file included in your GitHub repository.
+4. Question: I evaluated how well the logistic regression model predicts both the 0 (healthy loan) and 1 (high-risk loan) labels.
 
-Structure your report by using the report template that  `Starter_Code.zip`  includes, ensuring that it contains the following:
+## Step 3: Writing a Credit Risk Analysis Report
+### Credit Risk Analysis Report
+I have prepared a brief report on the performance of the machine learning model used in this challenge. This report is included as the README.md file in my GitHub repository.
+
+### Report Structure
+The report follows the structure provided in the "Starter_Code.zip" template and contains the following sections:
+
+1. **Summary**: A brief summary of the challenge and the objective.
+
+2. **Data Preprocessing and Splitting**: An explanation of the data loading and splitting process.
+
+3. **Logistic Regression Model**: Details on building and evaluating the logistic regression model.
+
+4. **Model Performance Analysis**: An analysis of how well the model predicts both healthy and high-risk loans.
+
+The report serves as documentation of the analysis performed in this challenge, summarizing the model's performance and findings.
+
+This concludes the Credit Risk Classification Challenge, where I successfully built and evaluated a logistic regression model for predicting credit risk. The report provides insights into the model's effectiveness in identifying high-risk loans.
+
 
 1.  **An overview of the analysis:**  Explain the purpose of this analysis.
     
