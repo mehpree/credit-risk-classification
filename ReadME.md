@@ -24,7 +24,7 @@ In this challenge, I tackled the task of building and evaluating a machine learn
 
 3. Question: I evaluated how well the logistic regression model predicts both the 0 (healthy loan) and 1 (high-risk loan) labels.
 
-#### For a detailed Credit Analysis Report please go through the Report.md document.
+## For a detailed Credit Analysis Report please go through the OverviewAnalysis.md document.
 
 This concludes the Credit Risk Classification Challenge, where I successfully built and evaluated a logistic regression model for predicting credit risk. The report provides insights into the model's effectiveness in identifying high-risk loans.
 
